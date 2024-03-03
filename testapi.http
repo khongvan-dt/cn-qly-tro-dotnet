@@ -1,0 +1,112 @@
+POST http://localhost:5096/api/Account HTTP/1.1
+Content-Type: application/json
+
+{
+      "Username":"Test API testt",
+      "Password":"Test_API_1a",
+       "Email":"van@example",
+      "Phone":"0987654321",
+      "Image":"http://localhost:",
+      "Gender":"Male",
+      "Birthday":"14/08/2004",
+      "Address":"Test Address",
+      "type_id":1,
+      "Password":"Test_API_1",
+      "SortOrder":1,
+      "Created_by":1
+}
+
+
+
+
+# POST http://localhost:5270/api/Account HTTP/1.1
+# Content-Type: application/json
+
+# [
+#     {
+#         "username": "Test_API testt12",
+#         "password": "Test_API_12"
+#     },
+#     {
+#         "username": "Test_API testt22",
+#         "password": "Test_API_2"
+#     },
+#     {
+#         "username": "Test_API testt32",
+#         "password": "Test_API_3"
+#     }
+# ]
+
+
+
+####
+GET http://localhost:5096/api/Account HTTP/1.1
+Content-type: application/json
+
+{
+
+}
+######
+PUT http://localhost:5096/api/Account
+Content-Type: application/json
+
+{
+   "id": 1,
+    "name": "General Contact",
+    "Username":"Test API testt",
+    "Password":"Test_API_1a",
+    "Email":"van@example",
+    "Phone":"0987654321",
+    "Image":"http://localhost:",
+    "Gender":"Male",
+    "Birthday":"14/08/2004",
+    "Address":"Test Address",
+    "type_id":1,
+    "Password":"Test_API_1",
+    "SortOrder":1,
+    "Created_by":1
+}
+
+
+####
+DELETE http://localhost:5096/api/Account/2 HTTP/1.1
+Content-Type: application/json
+
+{}
+
+
+###
+
+
+POST http://localhost:5270/api/Category HTTP/1.1
+Content-Type: application/json
+
+{
+      "Name":"Test API testt"
+}
+
+####
+GET http://localhost:5270/api/Category HTTP/1.1
+Content-type: application/json
+
+{}
+####
+PUT http://localhost:5270/api/Category HTTP/1.1
+Content-type: application/json
+
+{
+    "Id": 2,
+    "Name":"Test API test"
+}
+
+####
+DELETE http://localhost:5270/api/Category/4 HTTP/1.1
+Content-Type: application/json
+
+{}
+
+
+
+
+
+
